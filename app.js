@@ -38,4 +38,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+setInterval(() => {
+  console.log('Scheduled log message every 10 seconds');
+}, 10_000);
+
 module.exports = app;
